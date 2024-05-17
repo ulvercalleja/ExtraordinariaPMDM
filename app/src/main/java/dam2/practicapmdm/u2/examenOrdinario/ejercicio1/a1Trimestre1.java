@@ -67,8 +67,8 @@ public class a1Trimestre1 extends AppCompatActivity {
         btValidar.setOnClickListener(view -> {
             String nombre = etNombre.getText().toString();
             String fecha = etFecha.getText().toString();
-            double presupuestoMin = Double.parseDouble(etPresupuestoMin.getText().toString());
-            double presupuestoMax = Double.parseDouble(etPresupuestoMax.getText().toString());
+            int presupuestoMin = Integer.parseInt(etPresupuestoMin.getText().toString());
+            int presupuestoMax = Integer.parseInt(etPresupuestoMax.getText().toString());
 
             final Calendar fechaActual = Calendar.getInstance();
 
@@ -83,11 +83,14 @@ public class a1Trimestre1 extends AppCompatActivity {
             } else {
                 tvError.setText("");
                 // Crear un intent para pasar los datos a la siguiente actividad
+                String strpresupuestoMin = etPresupuestoMin.getText().toString();
+                String strpresupuestoMax = etPresupuestoMax.getText().toString();
+
                 Intent intent = new Intent(a1Trimestre1.this, a2Trimestre1.class);
                 intent.putExtra(INFO_NOMBRE, nombre);
                 intent.putExtra(INFO_FECHA, fecha);
-                intent.putExtra(INFO_PRESUPUESTO_MIN, presupuestoMin);
-                intent.putExtra(INFO_PRESUPUESTO_MAX, presupuestoMax);
+                intent.putExtra(INFO_PRESUPUESTO_MIN, strpresupuestoMin);
+                intent.putExtra(INFO_PRESUPUESTO_MAX, strpresupuestoMax);
                 startActivity(intent);
             }
         });

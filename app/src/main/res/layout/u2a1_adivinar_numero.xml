@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2.curso.u2a1AdivinarNumero">
+    tools:context=".u2.curso.u2.u2a1AdivinarNumero">
 
     <Button
         android:id="@+id/u2a1btReiniciar"

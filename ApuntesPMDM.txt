@@ -1,0 +1,19 @@
+public class PiezasViewHOlder extends RecyclerView.ViewHolder {
+	Text view tvNumero
+
+public PiezasViewHolder(View itemView){
+	super(itemView);
+	tvNumero = itemView.findViewById(R.id.);
+	
+}
+
+}
+
+ESTO LO QUE HACE ES ENLAZAR Y AGRUPAR LOS ELEMENTOS DE CADA VIEW HOLDER
+
+-------------------------------------------------------------------------
+Si se usa constraintlayout para un recycler view, acordarse de ajustar el tamaño del constraint al tamaño de la altura.
+-------------------------------------------------------------------------
+Ejercicio de los animales, pero añadir un boton a la izquierda que los desordene, y otro a la derecha que los ordene por tipo.
+Ejercicios de armamentos, tienen nombre, pais y tipo. Los tipos pueden ser Dron, tierra o misil. Si es dron pintar "o" si es tierra pintar "x"
+si es misil pintar "i".

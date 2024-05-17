@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="ReservedSystemPermission" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.WEB_SEARCH" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SET_ALARM" />
+        </intent>
+    </queries>
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +39,45 @@
         android:theme="@style/Theme.PracticaPMDM"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".u2.practicar.dragonball.DragonBallDetalles"
+            android:exported="false" />
+        <activity
+            android:name=".u2.practicar.dragonball.DragonBall"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".u2.curso.u2.u2a3Propinatron"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".u2.claseRecuperacion.ejercicio4Armamento.Armamentos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".u2.claseRecuperacion.ejercicio3Animales.Zoo"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".u2.claseRecuperacion.ejercicio2.GeneraEjercito"
             android:exported="false" />
@@ -52,7 +115,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".u2.curso.u2a2Coloratron"
+            android:name=".u2.curso.u2.u2a2Coloratron"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -61,7 +124,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".u2.curso.u2a1AdivinarNumero"
+            android:name=".u2.curso.u2.u2a1AdivinarNumero"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

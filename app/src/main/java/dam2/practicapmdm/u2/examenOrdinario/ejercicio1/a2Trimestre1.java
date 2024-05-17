@@ -2,6 +2,7 @@ package dam2.practicapmdm.u2.examenOrdinario.ejercicio1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -9,37 +10,59 @@ import android.widget.TextView;
 import java.util.Random;
 
 import dam2.practicapmdm.R;
+import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.a2CuadroDetalles;
 
 public class a2Trimestre1 extends AppCompatActivity {
-
-    TextView tvNombre, tvFecha, tvPresupuestoMinimo;
+    public static final String INFO_PRESUPUESTO = "presupuestoAleatorio";
+    public static final String INFO_NOMBRE = "nombre";
+    TextView tvFecha;
     Button btMas, btMenos;
+    private int presupuestoActual;
 
+    private f2Trimestre1 fragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.examen_ord_presupuesto_a2);
 
-        tvNombre = findViewById(R.id.a2tvNombre);
         tvFecha = findViewById(R.id.a2tvFecha);
-        tvPresupuestoMinimo = findViewById(R.id.a2tvPresupuestoMinimo);
         btMas = findViewById(R.id.a2btMas);
         btMenos = findViewById(R.id.a2btMenos);
 
         // Obtener los datos pasados desde la actividad anterior
         String nombre = getIntent().getStringExtra(a1Trimestre1.INFO_NOMBRE);
         String fecha = getIntent().getStringExtra(a1Trimestre1.INFO_FECHA);
-        double presupuestoMin = Double.parseDouble(getIntent().getStringExtra(a1Trimestre1.INFO_PRESUPUESTO_MIN));
-        double presupuestoMax = Double.parseDouble(getIntent().getStringExtra(a1Trimestre1.INFO_PRESUPUESTO_MAX));
+        int presupuestoMin = Integer.parseInt(getIntent().getStringExtra(a1Trimestre1.INFO_PRESUPUESTO_MIN));
+        int presupuestoMax = Integer.parseInt(getIntent().getStringExtra(a1Trimestre1.INFO_PRESUPUESTO_MAX));
 
-        tvNombre.setText(nombre);
         tvFecha.setText(fecha);
-        tvPresupuestoMinimo.setText(String.valueOf(presupuestoMin));
 
         Random rand = new Random();
 
         // Generar un número aleatorio dentro del rango definido por presupuestoMin y presupuestoMax
-        double presupuestoAleatorio = rand.nextDouble() * (presupuestoMax - presupuestoMin) + presupuestoMin;
+        int presupuestoAleatorio = rand.nextInt(presupuestoMax - presupuestoMin + 1) + presupuestoMin;
 
+        presupuestoActual = presupuestoAleatorio;
+
+        Bundle bundle = new Bundle();
+
+        bundle.putInt(INFO_PRESUPUESTO, presupuestoAleatorio);
+        bundle.putString(INFO_NOMBRE, nombre);
+
+        fragment = new f2Trimestre1();
+
+        fragment.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fragment).commit();
+
+        btMas.setOnClickListener(view -> {
+            presupuestoActual += 10; // Aumenta el presupuesto en 10 euros
+            fragment.actualizarPresupuesto(presupuestoActual);
+        });
+
+        btMenos.setOnClickListener(view -> {
+            presupuestoActual -= 10; // Disminuye el presupuesto en 10 euros
+            fragment.actualizarPresupuesto(presupuestoActual);
+        });
     }
 }

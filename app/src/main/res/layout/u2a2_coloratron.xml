@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2.curso.u2a2Coloratron">
+    tools:context=".u2.curso.u2.u2a2Coloratron">
 
     <TextView
         android:id="@+id/u2a2tvSalida1"

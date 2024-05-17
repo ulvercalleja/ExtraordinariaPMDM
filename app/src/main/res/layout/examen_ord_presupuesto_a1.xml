@@ -37,7 +37,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Presupuesto minimo"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/a1etFecha"
         app:layout_constraintStart_toStartOf="@+id/a1etFecha"
         app:layout_constraintTop_toBottomOf="@+id/a1btFecha" />
@@ -48,8 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="numberDecimal"
         android:hint="Presupuesto maximo"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/a1etPresupuestoMin"
         app:layout_constraintStart_toStartOf="@+id/a1etPresupuestoMin"
         app:layout_constraintTop_toBottomOf="@+id/a1etPresupuestoMin" />

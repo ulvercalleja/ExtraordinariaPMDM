@@ -29,6 +29,20 @@ public class f2Trimestre1 extends Fragment {
         tvPresupuesto = layout.findViewById(R.id.f2tvPresupuesto);
         tvNombre = layout.findViewById(R.id.f2tvNombre);
 
+        // Obtener el presupuesto aleatorio del Bundle
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            int presupuestoAleatorio = bundle.getInt(a2Trimestre1.INFO_PRESUPUESTO);
+            String nombre = bundle.getString(a2Trimestre1.INFO_NOMBRE);
+            // Mostrar el presupuesto aleatorio en el TextView
+            tvPresupuesto.setText(String.valueOf(presupuestoAleatorio));
+            tvNombre.setText(nombre);
+        }
+
         return layout;
+    }
+
+    public void actualizarPresupuesto(int nuevoPresupuesto) {
+        tvPresupuesto.setText(String.valueOf(nuevoPresupuesto));
     }
 }

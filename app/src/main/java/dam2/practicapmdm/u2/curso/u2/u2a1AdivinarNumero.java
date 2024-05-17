@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.curso;
+package dam2.practicapmdm.u2.curso.u2;
 
 /* Crea una App con el juego adivina el número. Tendrá un botón de reiniciar y un botón de jugar.
 El programa eligirá un número entre 1 y N, tendrás log2(N)-1 intentos. Si ganas el programa mostrará
