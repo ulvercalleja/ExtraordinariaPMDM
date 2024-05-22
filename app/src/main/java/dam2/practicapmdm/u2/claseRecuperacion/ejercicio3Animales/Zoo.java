@@ -24,7 +24,7 @@ public class Zoo extends AppCompatActivity {
         btdesordenar = findViewById(R.id.crzbtDesordenar);
         btordenartipo = findViewById(R.id.crzbtOrdenarTIpo);
 
-        rv.setLayoutManager(new LinearLayoutManager(Zoo.this));
+
         adapter = new ZooAdapter();
         rv.setAdapter(adapter);
         adapter.add(Animales.generarDatos());

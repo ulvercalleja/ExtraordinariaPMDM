@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <permission
         android:name="android.permission.QUERY_ALL_PACKAGES"
         tools:ignore="ReservedSystemPermission" />
@@ -39,6 +40,18 @@
         android:theme="@style/Theme.PracticaPMDM"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".u2.claseRecuperacion.ejercicio1Numeros.NumerosGenerados"
+            android:exported="false" />
+        <activity
+            android:name=".u2.claseRecuperacion.ejercicio1Numeros.GenerarNumero"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".u2.practicar.dragonball.DragonBallDetalles"
             android:exported="false" />
