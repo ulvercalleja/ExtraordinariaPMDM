@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -14,9 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import dam2.practicapmdm.R;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.api.CuadroApi;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.api.CuadroRepo;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.pojo.PojoCuadro;
+import dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.api.CuadroApi;
+import dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.api.CuadroRepo;
+import dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.pojo.PojoCuadro;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

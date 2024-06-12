@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2.examenOrdinario.ejercicio1.a2Trimestre1">
+    tools:context=".u2.examenes.examenOrdinario.ejercicio1.a2Trimestre1">
 
     <TextView
         android:id="@+id/a2tvFecha"
@@ -18,7 +18,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
-        android:name="dam2.practicapmdm.u2.examenOrdinario.ejercicio1.f2Trimestre1"
+        android:name="dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio1.f2Trimestre1"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/a2btMas"

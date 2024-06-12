@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2;
+package dam2.practicapmdm.u2.practicar.peliculas;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -6,21 +6,20 @@ import androidx.lifecycle.ViewModel;
 
 import java.util.Random;
 
-public class CuadrosViewModel extends ViewModel {
-
+public class PeliculasViewModel extends ViewModel {
     private MutableLiveData<Integer> misDatos;
     private final int DELAY=1000;
     private final int MAX_NUM=10000;
 
-    public LiveData<Integer> getCuadro(){
+    public LiveData<Integer> getPelicula(){
         if(misDatos==null){
             misDatos=new MutableLiveData<Integer>();
-            cargaCuadro();
+            cargaPelicula();
         }
         return misDatos;
     }
 
-    public void cargaCuadro() {
+    public void cargaPelicula() {
         Random random = new Random();
         new Thread(()->{
             try {

@@ -1,9 +1,9 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2.api;
+package dam2.practicapmdm.u2.examenes.examen2Trimestre.ejercicio2.api;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class CuadroApi {
+public class CriptoApi {
     private static Retrofit retrofit;
     private static final String BASE_URL = "http://192.168.56.102:8000/";
 
@@ -16,5 +16,4 @@ public class CuadroApi {
         }
         return retrofit;
     }
-
 }

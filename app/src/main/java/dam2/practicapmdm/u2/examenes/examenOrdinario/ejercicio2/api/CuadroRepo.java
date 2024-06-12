@@ -1,8 +1,8 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2.api;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.api;
 
 import java.util.List;
 
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.pojo.PojoCuadro;
+import dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.pojo.PojoCuadro;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;

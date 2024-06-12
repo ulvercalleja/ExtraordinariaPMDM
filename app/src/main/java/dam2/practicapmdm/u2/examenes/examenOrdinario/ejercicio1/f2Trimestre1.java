@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio1;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio1;
 
 import android.os.Bundle;
 

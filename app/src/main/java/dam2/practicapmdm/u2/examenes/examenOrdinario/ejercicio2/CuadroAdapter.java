@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 import dam2.practicapmdm.R;
 
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.pojo.PojoCuadro;
+import dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.pojo.PojoCuadro;
 
 public class CuadroAdapter extends RecyclerView.Adapter<CuadroAdapter.CuadroViewHolder>{
     private List<PojoCuadro> listaCuadros;

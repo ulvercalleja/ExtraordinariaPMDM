@@ -7,8 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import dam2.practicapmdm.R;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.CuadroAdapter;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.a2Cuadro;
 
 public class ElegirEjercito extends AppCompatActivity {
 

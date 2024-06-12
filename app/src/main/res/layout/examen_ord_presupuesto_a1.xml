@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2.examenOrdinario.ejercicio1.a1Trimestre1">
+    tools:context=".u2.examenes.examenOrdinario.ejercicio1.a1Trimestre1">
 
     <EditText
         android:id="@+id/a1etNombre"

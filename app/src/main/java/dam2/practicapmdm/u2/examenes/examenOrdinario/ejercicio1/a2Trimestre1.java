@@ -1,8 +1,7 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio1;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -10,7 +9,6 @@ import android.widget.TextView;
 import java.util.Random;
 
 import dam2.practicapmdm.R;
-import dam2.practicapmdm.u2.examenOrdinario.ejercicio2.a2CuadroDetalles;
 
 public class a2Trimestre1 extends AppCompatActivity {
     public static final String INFO_PRESUPUESTO = "presupuestoAleatorio";

@@ -1,4 +1,4 @@
-package dam2.practicapmdm.u2.examenOrdinario.ejercicio2.pojo;
+package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2.pojo;
 
 import java.io.Serializable;
 

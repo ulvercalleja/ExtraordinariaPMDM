@@ -5,7 +5,7 @@
     android:id="@+id/eocdclConstraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".u2.examenOrdinario.ejercicio2.a2CuadroDetalles">
+    tools:context=".u2.examenes.examenOrdinario.ejercicio2.a2CuadroDetalles">
 
     <TextView
         android:id="@+id/eocdtvUrl"

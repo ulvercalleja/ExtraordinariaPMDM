@@ -41,6 +41,36 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".u2.examenes.examen2Trimestre.ejercicio2.Criptos"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".u2.examenes.examen2Trimestre.ejercicio1.Poema"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".u2.practicar.peliculas.PeliculasDetalles"
+            android:exported="false" />
+        <activity
+            android:name=".u2.practicar.peliculas.Peliculas"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".u2.claseRecuperacion.ejercicio1Numeros.NumerosGenerados"
             android:exported="false" />
         <activity
@@ -104,10 +134,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".u2.examenOrdinario.ejercicio2.a2CuadroDetalles"
+            android:name=".u2.examenes.examenOrdinario.ejercicio2.a2CuadroDetalles"
             android:exported="false" />
         <activity
-            android:name=".u2.examenOrdinario.ejercicio2.a2Cuadro"
+            android:name=".u2.examenes.examenOrdinario.ejercicio2.a2Cuadro"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -116,10 +146,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".u2.examenOrdinario.ejercicio1.a2Trimestre1"
+            android:name=".u2.examenes.examenOrdinario.ejercicio1.a2Trimestre1"
             android:exported="false" />
         <activity
-            android:name=".u2.examenOrdinario.ejercicio1.a1Trimestre1"
+            android:name=".u2.examenes.examenOrdinario.ejercicio1.a1Trimestre1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
