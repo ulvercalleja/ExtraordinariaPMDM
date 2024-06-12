@@ -1,5 +1,8 @@
 package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio2;
-
+/* Haz una actividad con retrofit que pinte un RecyclerView con el listado de cuadros.
+Cuando pinches en uno se irá a otra actividad que mostrará el detalle. El fondo
+de la segunda actividad será del color indicado en el API.
+*/
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;

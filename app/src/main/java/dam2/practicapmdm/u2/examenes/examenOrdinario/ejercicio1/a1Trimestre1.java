@@ -1,5 +1,24 @@
 package dam2.practicapmdm.u2.examenes.examenOrdinario.ejercicio1;
-
+/* Presupuesto de mantenimiento
+Crea una aplicación que pida:
+• Nombre
+• Fecha
+• Presupuesto máximo
+• Presupuesto mínimo
+Tendrá un botón para Enviar.
+Validación:
+• Fecha será posterior a hoy
+• El mínimo debe ser inferior a máximo
+Errores:
+• Se mostrará en rojo un mensaje al lado del lugar donde se ha producido el
+error.
+Cuando se pulse enviar y los datos estén bien se mandará la información a otra
+actividad. La segunda actividad recogerá los datos y generará un presupuesto
+aleatorio entre máximo y mínimo.
+Ese presupuesto se mostrará en un fragment (Nombre y precio). Esta segunda
+actividad, además del fragment, tendrá dos botones: “más” y “menos”, para modificar el presupuesto dentro del del fragment. Cada vez que se pulsen variará el
+presupuesto en 10 euros.
+*/
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;

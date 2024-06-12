@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".u2.examenes.examen1Trimestre.ejercicio1.VentaTickets">
+
+    <Spinner
+        android:id="@+id/tr1spOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/tr1spDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr1spOrigen"
+        android:layout_margin="16dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintEnd_toEndOf="@+id/tr1spOrigen"
+        app:layout_constraintStart_toStartOf="@+id/tr1spOrigen"
+        app:layout_constraintTop_toBottomOf="@+id/tr1spOrigen" />
+
+    <TextView
+        android:id="@+id/tr1dpIda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr1spDestino"
+        android:layout_margin="16dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Seleccionar fecha de ida"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tr1spDestino" />
+
+    <TextView
+        android:id="@+id/tr1dpVuelta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr1dpIda"
+        android:layout_margin="16dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Seleccionar fecha de vuelta"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tr1dpIda"
+        app:layout_constraintStart_toStartOf="@+id/tr1dpIda"
+        app:layout_constraintTop_toBottomOf="@+id/tr1dpIda" />
+
+    <CheckBox
+        android:id="@+id/tr1cbSoloIda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr1dpVuelta"
+        android:layout_margin="16dp"
+        android:text="Solo ida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tr1dpVuelta" />
+
+    <TextView
+        android:id="@+id/tr1tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#E91E2F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tr1btReserva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tr1cbSoloIda" />
+
+    <Button
+        android:id="@+id/tr1btReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tr1cbSoloIda"
+        android:layout_margin="16dp"
+        android:text="@string/button_reserve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tr1cbSoloIda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

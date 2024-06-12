@@ -41,6 +41,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".u2.examenes.examen1Trimestre.ejercicio1.VentaTicketsB"
+            android:exported="false" />
+        <activity
+            android:name=".u2.examenes.examen1Trimestre.ejercicio1.VentaTickets"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".u2.examenes.examen2Trimestre.ejercicio2.Criptos"
             android:exported="true">
             <intent-filter>
